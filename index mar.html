@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel Motors </title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, nav, section, footer {
+            padding: 20px;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+        }
+        nav {
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+        }
+        section {
+            padding: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+        }
+        select, input, textarea {
+            padding: 10px;
+            margin: 10px 0;
+            width: 100%;
+            max-width: 500px;
+            box-sizing: border-box;
+        }
+        form button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366;
+            color: white;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            text-align: center;
+            font-size: 30px;
+            line-height: 60px;
+            z-index: 100;
+        }
+        .whatsapp-float:hover {
+            background-color: #1ebea5;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Marvel Motors</h1>
+    <p>Drive with Attitude</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#rates">Service Rates</a>
+    <a href="#location">Location</a>
+    <a href="#feedback">Feedback</a>
+    <a href="#contact">Contact</a>
+    <a href="#connect">Connect</a>
+</nav>
+<header>
+<section id="home">
+   <h1>MARVEL MOTORS </h1>
+   <h1>Best Service in Car Life</h1>
+   <img width="200px" scr="marvel.avif" alt="">
+
+</section>
+</header>
+
+<section id="services">
+    <h2>Services</h2>
+    <label for="carBrand">Select Your Car Brand:</label>
+    <select id="carBrand" name="carBrand" onchange="updateModels()">
+        <option value="">-- Select Brand --</option>
+        <option value="maruti">Maruti Suzuki</option>
+        <option value="hyundai">Hyundai</option>
+        <option value="honda">Honda</option>
+        <option value="toyota">Toyota</option>
+        <option value="tata">Tata</option>
+        <option value="mahindra">Mahindra</option>
+        <option value="ford">Ford</option>
+        <option value="kia">Kia</option>
+        <option value="renault">Renault</option>
+        <option value="nissan">Nissan</option>
+        <option value="others">Others</option>
+    </select>
+    <label for="carModel">Select Your Car Model:</label>
+    <select id="carModel" name="carModel">
+        <option value="">-- Select Model --</option>
+    </select>
+    <ul>
+        <li>Oil Change</li>
+       <li>Air and cabin filter replacement<il>
+       <li>Air conditioning</li>
+       <li> Battery</li>
+       <li> Brakes</li>
+       <li>Electrical</li>
+       <li>Oil change</li>
+       <li> Steering and suspension repair</li>
+       <li>Transmission</li>
+       <li> Vehicle engine diagnostic</li>
+       <li>A/C filter replacement</li>
+       <li>A/C services</li>
+       <li>Auto detailing</li>
+       <li>Body & Trim</li>
+       <li>Body repairs</li>
+        <li>Carburetor cleaning</li>
+        <li>Car painting</li>
+       <li>Car waxing</li>
+       <li>Chassis repair</li>
+       <li>Custom build</li>
+       <li>Drivetrain repair</li>
+       <li>Electrical repair</li>
+       <li>Engine repair</li>
+       <li>Exhaust</li>
+       <li> repairs & maintenance</li>
+       <li> Lighting repair</li>
+       <li>Painting</li>
+       <li> Re-gas/recharge</li>
+       <li>Side view mirror repair</li>
+       <li>Steering and suspension replacement</li>
+       <li>Steering wheel repair</li>
+       <li> Temperature check</li>
+       <li>Transmission repair</li>
+       <li>Transmission replacement</li>
+       <li>Tyre air pump</li>
+       <li>Tyre pressure testing</li>
+       <li>Tyre rotations</li>
+       <li>Upholstery & interior restoration</li>
+       <li>Vehicle A/C recharge</li>
+       <li>Vehicle A/C recharge</li>
+       <li>Vehicle battery replacement</li>
+        <li>Vehicle body and trim repair</li>
+       <li>Vehicle body and trim replacement</li>
+       <li>Vehicle brake repair</li>
+       <li>Vehicle brake replacement</li>
+       <li>Vehicle diagnostics service</li>
+       <li>Vehicle exhaust system repair</li>
+       <li> Vehicle exhaust system replacement</li>
+       <li>Vehicle inspection</li>
+       <li>Vehicle interior vacuuming</li>
+        <li>Vehicle maintenance</li>
+        <li>Vehicle modifications</li>
+        <li>Vehicle power window repair</li>
+        <li> Vehicle safety inspection</li>
+        <li>Vehicle side window replacement</li>
+        <li>Vehicle sunroof glass replacement</li>
+        <li>Vehicle water leak repair</li>
+        <li>>Wiper blade installation</li>
+
+    </ul>
+</section>
+
+<section id="rates">
+    <h2>Service Rates</h2>
+    <p>Contact us at <strong>9600760012</strong> for detailed service pricing and packages.</p>
+</section>
+
+<section id="location">
+    <h2>Location</h2>
+    <p>32, Kattabomman Street, Ganapathy, Coimbatore - 641006</p>
+    <p><a href="https://maps.app.goo.gl/oBTN2M7GZ1Pf1c9e7" target="_blank">View on Google Maps</a></p>
+</section>
+
+<section id="feedback">
+    <h2>Feedback</h2>
+    <p>We value your feedback. Please rate our service through our contact number or visit our Instagram page below.</p>
+    <p><a href="https://www.instagram.com/marvelmotors6?igsh=a2I4dzQ2aXpzaWZ1" target="_blank">Follow us on Instagram</a></p>
+</section>
+
+<section id="contact">
+    <h2>Contact Form</h2>
+    <form action="#" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="text" name="phone" placeholder="Your Phone Number" required>
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<section id="connect">
+    <h2>Connect with Us</h2>
+    <ul>
+        <li><strong>Google Search:</strong> <a href="https://search.google.com/search-console" target="_blank">Search Console</a></li>
+        <li><strong>Google Business:</strong> <a href="https://www.google.com/business/" target="_blank">Google My Business</a></li>
+        <li><strong>Instagram:</strong> <a href="https://www.instagram.com/marvelmotors6?igsh=a2I4dzQ2aXpzaWZ1" target="_blank">@marvelmotors6</a></li>
+        <li><strong>WhatsApp:</strong> <a href="https://wa.me/919600760012" target="_blank">Chat Now</a></li>
+        <li><strong>Maps:</strong> <a href="https://maps.app.goo.gl/oBTN2M7GZ1Pf1c9e7" target="_blank">Google Maps Location</a></li>
+    </ul>
+</section>
+
+<a href="https://wa.me/919600760012" class="whatsapp-float" target="_blank">&#x1F4AC;</a>
+
+<footer>
+    <p>Contact: 9600760012 | Email: marvelmotors6@gmail.com</p>
+    <p>GST: 33CSTPG1730L1ZK</p>
+</footer>
+
+<script>
+    function showOTPForm() {
+        const email = document.getElementById("email").value;
+        const password = document.getElementById("password").value;
+        if (email && password) {
+            document.getElementById("otpForm").style.display = "block";
+        } else {
+            alert("Please enter email and password");
+        }
+    }
+
+    function verifyOTP() {
+        const otp = document.getElementById("otp").value;
+        if (otp === "1234") {
+            alert("Login successful! Redirecting to service section...");
+            location.href = "#services";
+        } else {
+            alert("Invalid OTP");
+        }
+    }
+
+    function updateModels() {
+        const brandSelect = document.getElementById("carBrand");
+        const modelSelect = document.getElementById("carModel");
+
+        const modelsByBrand = {
+            "maruti": ["Swift", "Baleno", "Alto", "WagonR"],
+            "hyundai": ["i20", "Creta", "Verna"],
+            "honda": ["City", "Amaze", "Jazz"],
+            "toyota": ["Innova", "Glanza", "Fortuner"],
+            "tata": ["Nexon", "Altroz", "Punch"],
+            "mahindra": ["Scorpio", "XUV300", "Bolero"],
+            "ford": ["EcoSport", "Figo"],
+            "kia": ["Seltos", "Sonet"],
+            "renault": ["Kwid", "Triber"],
+            "nissan": ["Magnite", "Kicks"],
+            "others": ["Other"]
+        };
+
+        const selectedBrand = brandSelect.value;
+        const models = modelsByBrand[selectedBrand] || [];
+
+        modelSelect.innerHTML = "<option value=''>-- Select Model --</option>";
+        models.forEach(model => {
+            const option = document.createElement("option");
+            option.value = model.toLowerCase();
+            option.textContent = model;
+            modelSelect.appendChild(option);
+        });
+    }
+</script>
+
+</body>
+</html>
